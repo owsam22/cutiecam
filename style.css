@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background: #ffeafc;
+  overflow-x: hidden;
+}
+
+.background-decor {
+  background: url('https://i.pinimg.com/736x/f0/4a/c1/f04ac1ebb6f1ff987aba46a3f2309c54.jpg') no-repeat center center / cover;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #e91e63;
+  margin-bottom: 1rem;
+}
+
+video {
+  width: 100%;
+  max-width: 360px;
+  border: 6px solid #ffb6c1;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  filter: none;
+  transform: scaleX(-1);
+}
+
+#countdown {
+  position: absolute;
+  top: 20%;
+  font-size: 2.5rem;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+#announcement {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #9c27b0;
+  text-align: center;
+}
+
+.filter-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter {
+  background: #ff3e7ec0;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filter:hover {
+  background: #ffb6c1;
+}
+
+button {
+  margin-top: 1rem;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+#resultPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fffafc;
+  padding: 1rem;
+  border: 4px solid #f8bbd0;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 999;
+}
+
+#resultPopup img {
+  max-width: 300px;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  video {
+    max-width: 90vw;
+  }
+  #resultPopup img {
+    max-width: 90vw;
+  }
+}

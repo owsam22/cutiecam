@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cute Selfie Cam 📸</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-decor"></div>
+
+  <div class="main-container">
+    <h1>Cute Selfie Cam 💖</h1>
+
+    <div class="camera-wrapper">
+      <video id="video" autoplay playsinline></video>
+      <div id="countdown"></div>
+      <div id="announcement"></div>
+    </div>
+
+    <div class="filter-thumbnails">
+      <button class="filter" data-filter="none">🌈 None</button>
+      <button class="filter" data-filter="grayscale(1)">🖤 Mono</button>
+      <button class="filter" data-filter="sepia(1)">🌻 Vintage</button>
+      <button class="filter" data-filter="brightness(1.2) saturate(1.3)">☀️ Bright</button>
+      <button class="filter" data-filter="blur(1px) brightness(1.1)">🌸 Soft Blur</button>
+    </div>
+
+    <button id="captureBtn">📷 Capture 3-Photo Collage</button>
+
+    <div id="resultPopup" class="hidden">
+      <img id="finalImage" alt="Collage Preview" />
+      <button id="downloadBtn">⬇️ Download</button>
+      <button id="retakeBtn">🔄 Recapture</button>
+    </div>
+  </div>
+
+  <canvas id="canvas" class="hidden"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
