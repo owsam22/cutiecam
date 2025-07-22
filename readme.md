@@ -7,7 +7,7 @@ Built with HTML, CSS, and JavaScript — styled like a mobile camera UI.
 
 ## 🌐 Live Demo
 
-👉 [Try it here](https://owsam22.github.io/cutiecam-cam)  
+👉 [Try it here](https://owsam22.github.io/cutiecam)  
 *(Replace this link with your actual GitHub Pages URL)*
 
 ---
