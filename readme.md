@@ -1,4 +1,4 @@
-# 📸 Cute Selfie Cam (curently working)
+# 📸 Cute Selfie Cam (curently working on it)
 
 A fun, camera-style web app that lets you take cute selfies straight from your browser!  
 Built with HTML, CSS, and JavaScript — styled like a mobile camera UI.
